@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdaptiveScooter</title>
+    <style>
+        .box {
+            border: 2px solid teal;
+            width: 320px;
+            height: 320px;
+            overflow: hidden;
+        }
+
+        img{
+            max-width: 100%;
+        }
+
+        /* @media(max-width: 768px){
+            .mobile{
+                display: none;
+            }
+            .deskctop{
+                display: none;
+            }
+            .tablet{
+                display: block;
+            }
+        }
+
+        @media (max-width: 430px) {
+            .deskctop {
+                display: none;
+            }
+            .tablet {
+                display: none;
+            }
+            .mobile {
+                display: block;
+            }
+        }
+             */
+
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <!-- <img src="./img/img_ad/1000.jpg" class="deskctop" alt="">
+        <img src="./img/img_ad/800.webp" class="tablet" alt="">
+        <img src="./img/img_ad/480.jpeg" class="mobile" alt=""> -->
+        <picture>
+            <source srcset="./img/img_ad/" media="max-width:800px"/>
+            <img src="/img/img_ad/1000.jpg" class="descktop" alt="">
+        </picture>
+        <img src="./img/img_ad/1000.jpg" alt="" srcset="./asd">
+    </div>
+</body>
+</html>

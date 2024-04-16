@@ -37,28 +37,52 @@ body {
     font-weight: 600;
 }
 
+.category_name {
+    font-size: 25px;
+    font-weight: 700;
+}
+
 
 .burger_nav{
-    display: none;
-    position: absolute;
+    position: fixed;
     top: 0;
+    left: -80%;
     background-color: var(--main_text);
     opacity: 0.9;
     width: 80%;
     height: 100%;
-    z-index: 1;
+    z-index: 5;
 }
 
 .burger_nav ul li {
     color: var(--white_color);
     padding: 10px;
     border-bottom: 1px solid var(--white_color);
+    position: relative;
+}
+
+.burger_img:hover + .burger_nav, .burger_nav:hover {
+    left: 0;
+    cursor: pointer;
 }
 
 .active {
     display: block;
 }
 
+.sign_icon:before {
+    content: url(./img/icon/people.svg);
+    filter: invert(1);
+    position: absolute;
+    left: 0px;
+}
+
+.register_icon:before{
+    content: url(./img/icon/people.svg);
+    filter: invert(1);
+    position: absolute;
+    left: 0px;
+}
 
 .baner_box {
     width: 100vw;
@@ -127,6 +151,7 @@ body {
     justify-content: center;
     background-color: var(--accent);
     padding: 10px 20px;
+    max-height: 40px;
 }
 
 .promotion_text p {
@@ -174,6 +199,7 @@ body {
 
 .goods_categori{
     width: 100%;
+    margin-bottom: 80px;
 }
 
 .filter {
@@ -190,4 +216,199 @@ body {
 
 .filter p:hover {
     border-bottom: 2px solid var(--accent);
+}
+
+.search_form {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 80px;
+    position: relative;
+}
+
+.search_form input {
+    width: 95%;
+    margin: 0 auto;
+    padding: 15px 10px;
+    background-color: var(--base_color);
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+.search_icon {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 13px;
+    right: 15px;}
+
+
+.search_form input:focus {
+    border: 2px solid var(--accent);
+    outline-color: var(--accent);
+}
+
+.good_category {
+    border: 1px solid var(--light_grey_text);
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.category_box{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.good_categori_name {
+    font-size: 23px;
+    font-weight: 800;
+    color: var(--accent);
+}
+
+.details {
+    font-size: 14px;
+    margin-top: 48px;
+    font-weight: 400;
+    color: var(--light_grey_text);
+}
+
+.good_category img{
+    position: absolute;
+    bottom: 13px;
+    right: 13px;
+}
+
+
+.popular_item {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.popular_head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.popular_head ul { 
+    display: flex;
+    margin-top: 25px;
+}
+
+.popular_head ul li {
+    margin-left: 13px;
+}
+
+.popular_head ul li:first-child{
+    margin-left: 0px;
+}
+
+.popular_head ul li:hover {
+    font-weight: 700;
+    border-bottom: 2px solid var(--accent)
+}
+
+.popular_body{
+    margin-top: 21.68px;
+    border: 2px solid var(--light_grey_text);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.popular_main_text {
+    margin-top: 13.01px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.popular_price{
+    margin-top: 25.02px;
+    margin-bottom: 23.02px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.popular_pagination{
+    display: flex;
+    justify-content: center;
+    margin-top: 20.02px;
+}
+
+.popular_pagination li{
+    width: 14.29px;
+    height: 14.01px;
+    background-color: #C4C4C4;
+    border-radius: 50%;
+    border: 1px solid var(--white_color);
+    margin-left: 22.46px;
+}
+
+.popular_pagination li:first-child{
+    margin-left: 0;
+}
+
+.popular_pagination li:hover{
+    background-color: var(--accent);
+}
+
+.see_more {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 37.91px;
+    background-color: var(--base_color);
+    display: flex;
+    justify-content: center;
+    padding: 17px 43px 15px 43px;
+}
+
+
+.baner_ad {
+    margin: 0 auto;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    background-color: var(--accent);
+    position: relative;
+}
+
+.baner_ad p {
+    margin-top: 6px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--white_color);
+}
+
+.look_all{
+    width: 50%;
+    margin-top: 8px;
+    background-color: var(--white_color);
+}
+
+.look_all p{
+    color: var(--main_text);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.cvadro_ad {
+    display: flex;
+    
+}
+.all_ad {
+    display: flex;
+    align-items: flex-start;
 }
