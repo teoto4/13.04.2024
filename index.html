@@ -15,13 +15,26 @@
   <body>
     <header class="header">
       <div class="burger_menu">
-        <button id="burger_btn">
-          <img
-            class="burger_img"
-            src="./img/icon/burger_menu.svg"
-            alt="burger_menu"
-          />
-        </button>
+        <img class="burger_img" src="./img/icon/burger_menu.svg" alt="burger_menu"/>
+        <div class="burger_nav" id="burger_nav">
+          <ul>
+            <li class="sign_icon">Увійти</li>
+            <li class="registe_icon">Реєстрація</li>
+            <li class="love_icon">Улюблене</li>
+            <li class="buy_icon">Корзина</li>
+            <li class="">Магазин</li>
+            <li>Акції</li>
+            <li>Доставка та оплата</li>
+            <li>Квадроцикли</li>
+            <li>Катера</li>
+            <li>Гідроцикли</li>
+            <li>Човни</li>
+            <li>Всюдоходи</li>
+            <li>Снігоходи</li>
+            <li>Двигуни</li>
+            <li>Запчастини</li>
+          </ul>
+        </div>
         <p class="logo_text">DRIVE MOTO</p>
         <div class="header_icon">
           <img src="./img/icon/Vector.svg" alt="Like" />
@@ -29,25 +42,7 @@
           <img src="./img/icon/market.svg" alt="market" />
         </div>
       </div>
-      <div class="burger_nav" id="burger_nav">
-        <ul>
-          <li>Увійти</li>
-          <li>Реєстрація</li>
-          <li>Улюблене</li>
-          <li>Корзина</li>
-          <li>Магазин</li>
-          <li>Акції</li>
-          <li>Доставка та оплата</li>
-          <li>Квадроцикли</li>
-          <li>Катера</li>
-          <li>Гідроцикли</li>
-          <li>Човни</li>
-          <li>Всюдоходи</li>
-          <li>Снігоходи</li>
-          <li>Двигуни</li>
-          <li>Запчастини</li>
-        </ul>
-      </div>
+      
     </header>
     <main>
       <section class="baner_box">
@@ -93,7 +88,83 @@
           <p>Пощук по номеру</p>
           <p>Пошук по бренду</p>
         </div>
+        <form class="search_form">
+          <input type="text" placeholder="Введіть марку">
+          <svg class="search_icon">
+            <use href="./img/icon/symbol-defs.svg#icon-search"></use>
+          </svg>
+        </form>
+      </article>
+
+      <article class="category_box">
+        <div class="good_category">
+          <p class="good_category_name">Квадроцикли</p>
+          <p class="details">Детальніше ></p>
+          <img src="./img/goods/crvadro.png" alt="">
+        </div>
+        <div class="good_category">
+          <p class="good_category_name">Гідроцикли</p>
+          <p class="details">Детальніше ></p>
+          <img src="./img/goods/boat.png" alt="">
+        </div>
+        <div class="good_category">
+          <p class="good_category_name">Катера</p>
+          <p class="details">Детальніше ></p>
+          <img src="./img/goods/kater.png" alt="">
+        </div>
+        <div class="good_category">
+          <p class="good_category_name">Снігоходи</p>
+          <p class="details">Детальніше ></p>
+          <img src="./img/goods/snow_driver.png" alt="">
+        </div>
+        <div class="good_category">
+          <p class="good_category_name">Всюдоходи</p>
+          <p class="details">Детальніше ></p>
+          <img src="./img/goods/all_way.png" alt="">
+        </div>
+        <div class="good_category">
+          <p class="good_category_name">Двигуни</p>
+          <p class="details">Детальніше ></p>
+          <img width="50" style="right: 33px" src="./img/goods/motors.png" alt="">
+        </div>
       </article>
     </section>
+    <section class="popular_item">
+      <div class="popular_head">
+        <p class="category_name">Популярні товари</p>
+        <ul>
+          <li>Запчастини</li>
+          <li>Мотори</li>
+          <li>Шини</li>
+          <li>Електроніка</li>
+        </ul>
+      </div>
+
+      <div class="popular_body">
+        <img src="./img/goods/backpack.png" alt="">
+        <p class="popular_main_text">Водонепроникний <br> Рюкзак</p>
+        <p class="popular_price">4 500 UAH</p>
+      </div>
+      
+      <ul class="popular_pagination">
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+
+      <div class="see_more">
+        <p>Показати більше</p>
+      </div>
+    </section>
+
+    <section class="baner_ad">
+      <p class="main_text_ad">Скидки на всі запчастини <br> до 70%</p>
+      <div class="look_all">
+        <p>Подивитись всі</p>
+      </div>
+      <img class="cvadro_ad" src="./img/goods/crvadro.png" alt="">
+      <img class="all_ad" src="./img/goods/all_way.png" alt="">
+    </section>
+
   </body>
 </html>
