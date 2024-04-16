@@ -412,3 +412,27 @@ body {
     display: flex;
     align-items: flex-start;
 }
+
+
+
+@media (min-width:768px) {
+    .category_box{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5%;
+    }
+
+    .good_category{
+        width: calc(90%/2 );
+    }
+
+
+    .burger_nav ul li{
+        font-size: 28px;
+        padding: 35px;
+    }
+
+    .burger_nav ul li img{
+        width: 90px;
+    }
+}
