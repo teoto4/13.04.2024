@@ -44,6 +44,7 @@ body {
 
 
 .burger_nav{
+    position: relative;
     position: fixed;
     top: 0;
     left: -80%;
@@ -52,13 +53,33 @@ body {
     width: 80%;
     height: 100%;
     z-index: 5;
+    overflow: hidden;
 }
+
+
+.border_bottom_nav{
+}
+
+.border_bottom_nav:before{
+    position:absolute;
+    top:25px;
+    left:-70px;
+    width:150%;
+    border-top:0.3px solid #000000;
+    content:"";
+    filter: invert(1);
+}
+
 
 .burger_nav ul li {
     color: var(--white_color);
-    padding: 10px;
-    border-bottom: 1px solid var(--white_color);
+    margin-bottom: 46px;
     position: relative;
+    margin-left: 53px;
+}
+
+.burger_nav ul li:first-child{
+    margin-top: 46px;
 }
 
 .burger_img:hover + .burger_nav, .burger_nav:hover {
@@ -70,19 +91,55 @@ body {
     display: block;
 }
 
-.sign_icon:before {
-    content: url(./img/icon/people.svg);
-    filter: invert(1);
+.sign_icon{
     position: absolute;
-    left: 0px;
+    top: 49px;
+    left: 10px;
+    filter: invert(1);
 }
 
-.register_icon:before{
-    content: url(./img/icon/people.svg);
-    filter: invert(1);
+.register_icon{
     position: absolute;
-    left: 0px;
+    top: 115px;
+    left: 10px;
+    filter: invert(1);
 }
+
+.love_icon{
+    position: absolute;
+    top: 180px;
+    left: 10px;
+    filter: invert(1);
+}
+
+.buy_icon{
+    position: absolute;
+    top: 245px;
+    left: 10px;
+    filter: invert(1);
+}
+
+.market_icon{
+    position: absolute;
+    top: 313px;
+    left: 15px;
+    filter: invert(1);
+}
+
+.procent_icon{
+    position: absolute;
+    top: 380px;
+    left: 15px;
+    filter: invert(1);
+}
+
+.delivery_icon{
+    position: absolute;
+    top: 450px;
+    left: 15px;
+    filter: invert(1);
+}
+
 
 .baner_box {
     width: 100vw;
@@ -380,11 +437,12 @@ body {
     justify-content: center;
     align-items: center;
     width: 90%;
+    height: 90px;
     background-color: var(--accent);
     position: relative;
 }
 
-.baner_ad p {
+.main_text_ad p {
     margin-top: 6px;
     text-align: center;
     font-size: 18px;
@@ -393,9 +451,15 @@ body {
 }
 
 .look_all{
-    width: 50%;
+    margin: 0 auto;
+    width: 132.19px;
+    height: 33px;
     margin-top: 8px;
+    margin-bottom: 7px;
     background-color: var(--white_color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .look_all p{
@@ -404,13 +468,25 @@ body {
     font-weight: 500;
 }
 
+.look_all_box{
+   display: flex;
+}
+
 .cvadro_ad {
-    display: flex;
-    
+    width: 66.56px;
+    height: 54px;
+    margin-right: 7.5px;
+    position: absolute;
+    top: 35px;
+    left: 9.38px;
 }
 .all_ad {
-    display: flex;
-    align-items: flex-start;
+    position: absolute;
+    top: 39px;
+    right: 12.19px;
+    width: 69.38px;
+    height: 48px;
+    transform: scaleX(-1);
 }
 
 
@@ -435,4 +511,6 @@ body {
     .burger_nav ul li img{
         width: 90px;
     }
+
+
 }
