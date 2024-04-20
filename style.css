@@ -21,12 +21,29 @@ body {
     height: 100vh;
 }
 
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    position: fixed;
+    background-color: var(--white_color);
+    z-index: 1;
+}
+
+.blank{
+    height: 55px;
+}
+
 .header, .burger_menu{
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 
 .burger_menu {
     padding: 20px;
@@ -185,11 +202,12 @@ body {
 }
 
 .promotion{
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     width: 90%;
-    margin: 0 auto;
     border: 1px solid var(--light_grey_text);
 }
 
@@ -208,14 +226,15 @@ body {
     justify-content: center;
     background-color: var(--accent);
     padding: 10px 20px;
-    max-height: 40px;
+    max-height: 70px;
 }
 
 .promotion_text p {
-    font-size: 12px;
+    font-size: 20px;
     font-weight: 700;
     color: var(--white_color);
     text-transform: uppercase;
+    letter-spacing: .2rem;
 }
 
 .promotion_price{
@@ -263,6 +282,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin-top: 80px;
 }
 
 .filter p{
@@ -337,6 +357,7 @@ body {
     bottom: 13px;
     right: 13px;
 }
+
 
 
 .popular_item {
@@ -452,8 +473,8 @@ body {
 
 .look_all{
     margin: 0 auto;
-    width: 132.19px;
-    height: 33px;
+    max-width: 200px;
+    max-height: 100px;
     margin-top: 8px;
     margin-bottom: 7px;
     background-color: var(--white_color);
@@ -466,10 +487,12 @@ body {
     color: var(--main_text);
     font-size: 14px;
     font-weight: 500;
+    padding: 8px 13px;
 }
 
 .look_all_box{
    display: flex;
+   
 }
 
 .cvadro_ad {
@@ -491,6 +514,11 @@ body {
 
 
 
+.motor_adapt{
+    max-height: 110px;
+    max-width: 60px;
+}
+
 @media (min-width:768px) {
     .category_box{
         display: flex;
@@ -505,12 +533,202 @@ body {
 
     .burger_nav ul li{
         font-size: 28px;
-        padding: 35px;
     }
 
-    .burger_nav ul li img{
-        width: 90px;
+    .border_bottom_nav:before{
+        position:absolute;
+        top:33px;
+        left:-80px;
+        width:150%;
+        border-top:2px solid #000000;
+        content:"";
+        filter: invert(1);
     }
 
+    .burger_nav ul img{
+        margin-top:10px ;
+        width: 40px;
+    }
+
+    .burger_nav ul li {
+        margin-bottom: 46px;
+        margin-left: 73px;
+    }
+
+
+    .sign_icon{
+        top:32px;
+    }
+
+    .love_icon{
+        top: 197px;
+    }
+
+    .buy_icon{
+        top: 281px;
+    }
+
+    .market_icon{
+        top: 345px;
+        left: 10px;
+    }
+    .delivery_icon{
+        left: 10px;
+        top: 435px;
+    }
+
+    .procent_icon{
+        top: 510px;
+    }
+    
+   .header img{
+    width: 50px;
+   }
+
+   .header p {
+    font-size: 50px;
+   }
+
+   .baner_box p {
+    font-size: 50px;
+    margin-top: 50px;
+    margin-left: 40px;
+   }
+
+   .pagination{
+    width: 200px;
+   }
+
+   .pagination li {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 3px solid var(--white_color);
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.promo_good_name{
+    font-size: 40px;
+}
+
+.promotion_card p {
+    font-size: 40px;
+}
+
+.promotion_text p{
+    padding: 40px;
+    font-size: 40px;
+}
+
+
+.promotion img{
+    width: 200px;
+}
+
+.promo_condition {
+    font-size: 30px;
+}
+
+.promo_condition span {
+    font-size: 30px;
+}
+
+.filter p{
+    font-size: 20px;
+}
+
+.search_form input{
+    padding: 25px 15px;
+}
+
+.search_form svg{
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.good_category img{
+    width: 120px;
+}
+
+.good_category_name{
+    font-size: 25px;
+}
+
+.details {
+    font-size: 15px;
+}
+
+.category_name{
+    font-size: 40px;
+}
+
+.popular_head ul li {
+    font-size: 20px;
+}
+
+.popular_body img {
+    width: 300px;
+}
+
+.popular_main_text{
+    font-size: 30px;
+}
+
+.popular_price{
+    font-size: 50px;
+}
+
+
+
+.popular_pagination li{
+    width: 30px;
+    height: 30px;
+    background-color: #C4C4C4;
+    border-radius: 50%;
+    border: 3px solid var(--white_color);
+    margin-left: 22.46px;
+}
+
+.see_more p{
+    font-size: 20px;
+    padding: 30px 80px;
+}
+
+.baner_ad {
+    height: 150px;
+}
+
+.baner_ad p{
+    font-size: 25px;
+}
+
+.baner_ad img{
+    width: 150px;
+    height: 100px;
+}
+
+.look_all p{
+    display: flex;
+    padding: 15px 25px;
+    justify-content: center;
+    text-align: center;
+}
+
+.look_all_box{
+    max-width: 500px;
+}
+
+.look_all{
+    max-width: 500px;
+}
+
+.popular_head ul li {
+    margin-left: 25px;
+}
+
+.filter{
+    margin-top: 20px;
+}
 
 }
