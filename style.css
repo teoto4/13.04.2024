@@ -36,7 +36,7 @@ header{
 }
 
 .blank{
-    height: 55px;
+    height: 60px;
 }
 
 .header, .burger_menu{
@@ -77,6 +77,17 @@ header{
     height: 100%;
     z-index: 5;
     overflow: hidden;
+}
+
+.backdrop{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.411);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    z-index: 1;
 }
 
 
@@ -171,6 +182,12 @@ header{
     background-image: url("./img/goods/water_scooter.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.slide p {
+    text-align: start;
+    font-size: 5vw;
+    max-width: 500px;
 }
 
 .pagination {
@@ -507,7 +524,21 @@ header{
     max-width: 60px;
 }
 
+.promo_desk {
+display: none;
+}
+
+.baner_box_desk {
+    display: none;
+}
+
+
 @media (min-width:720px) and (max-width:1000px) {
+
+    .promo_desk{
+    display: none;
+    }
+
     .category_box{
         display: flex;
         flex-wrap: wrap;
@@ -731,6 +762,7 @@ header{
 
 
 @media (min-width:1001px){
+
     .burger_menu {
         display: none;
     }
@@ -795,6 +827,19 @@ header{
         cursor: pointer;
     }
 
-    
-    margin: 80%;
+    .baner_box {
+        display: none;
+    }
+
+    .baner_box_desk{
+        width: 100%;
+        display: flex;
+        margin-top: 78px;
+    }
+
+    .slider_box_desk {
+        width: 50%;
+        position: relative;
+    }
+
 }
