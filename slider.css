@@ -82,16 +82,7 @@
  
  
 
-.baner_text {
-    color: var(--white_color);
-    font-size: 24px;
-    font-weight: 600;
-    position: absolute;
-    top: 65%;
-    left: 20px;
-    text-align: center;
-    z-index: 3;
-}
+
 
 
 @media(min-width:1001px){
@@ -111,4 +102,5 @@
    .backdrop{
       display: none;
    }
+
 }

@@ -36,7 +36,7 @@ header{
 }
 
 .blank{
-    height: 60px;
+    height: 75px;
 }
 
 .header, .burger_menu{
@@ -517,6 +517,17 @@ header{
     transform: scaleX(-1);
 }
 
+.baner_text {
+    color: var(--white_color);
+    font-size: 24px;
+    font-weight: 600;
+    position: absolute;
+    top: 15%;
+    left: 10px;
+    text-align: center;
+    z-index: 3;
+}
+
 
 
 .motor_adapt{
@@ -758,10 +769,23 @@ display: none;
     top: 50px;
 }
 
+.baner_text{
+    top: 10%;
+}
+
 }
 
 
 @media (min-width:1001px){
+    .header{
+        padding-top:25px ;
+        z-index: 5;
+        padding-bottom:20px ;
+    }
+
+    .promotion{
+        display: none;
+    }
 
     .burger_menu {
         display: none;
@@ -835,11 +859,60 @@ display: none;
         width: 100%;
         display: flex;
         margin-top: 78px;
+        justify-content: center;
     }
 
     .slider_box_desk {
-        width: 50%;
         position: relative;
     }
 
+    .promotion_card_desk{ 
+        display: flex;
+        justify-content: space-between;
+    }
+    .promotion_box_desk{
+        border: 1px solid var(--light_grey_text);
+        margin-left: 36px;
+        width: 265px;
+        height: 397px;
+    }
+
+    .promotion_box_desk p{
+        text-align: center;
+    }
+
+    .promo_condition_desk{
+        margin-top: 28px;
+        padding: 25px 20px;
+        background-color: var(--base_color);
+        text-align: center;
+        font-size: 20px;    
+    }
+
+    .promo_condition_desk span {
+        color: var(--accent);
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .search_form {
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        width: 88%;
+    }
+
+    .search_form input {
+        width: 100%;
+    }
+
+    .filter_box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .filter_box p {
+    justify-content: start;
+    }
 }
