@@ -291,6 +291,7 @@ header{
 }
 
 .filter p{
+    cursor: pointer;
     padding: 10px 0 10px 10px;
     font-size: 20px;
 }
@@ -332,6 +333,7 @@ header{
 }
 
 .good_category {
+    cursor: pointer;
     border: 1px solid var(--light_grey_text);
     border-radius: 5px;
     padding: 20px;
@@ -386,6 +388,7 @@ header{
 }
 
 .popular_head ul li {
+    cursor: pointer;
     margin-left: 13px;
 }
 
@@ -445,6 +448,7 @@ header{
 }
 
 .see_more {
+    cursor: pointer;
     width: 90%;
     margin: 0 auto;
     margin-top: 37.91px;
@@ -489,6 +493,7 @@ header{
 }
 
 .look_all p{
+    cursor: pointer;
     color: var(--main_text);
     font-size: 14px;
     font-weight: 500;
@@ -694,6 +699,7 @@ display: none;
 }
 
 .popular_head ul li {
+    cursor: pointer;
     font-size: 20px;
 }
 
@@ -730,6 +736,7 @@ display: none;
 }
 
 .baner_ad p{
+    cursor: pointer;
     font-size: 25px;
 }
 
@@ -899,7 +906,7 @@ display: none;
         margin-top: 10px;
         display: flex;
         justify-content: center;
-        width: 88%;
+        width: 80%;
     }
 
     .search_form input {
@@ -910,9 +917,33 @@ display: none;
         display: flex;
         flex-direction: column;
         align-items: center;
+        gap: 15px;
+        width: 100%;
     }
 
     .filter_box p {
-    justify-content: start;
+        margin-right:24px ;
+    }
+    .start {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        width: 75%;
+    }
+
+    .category_box{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5%;
+    }
+
+    .good_category{
+        width: calc(90%/3 );
+    }
+
+    .popular_body{
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
     }
 }
