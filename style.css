@@ -947,7 +947,7 @@ display: none;
         width: calc(90%/3 );
     }
 
-    .good_category, p:hover {
+    .good_category p:hover {
         color: var(--accent);
 
     }
