@@ -403,12 +403,16 @@ header{
 
 .popular_body{
     margin-top: 21.68px;
-    border: 2px solid var(--light_grey_text);
-    border-radius: 5px;
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.popular_card{
+    border: 2px solid var(--light_grey_text);
+    border-radius: 5px;
 }
 
 .popular_main_text {
@@ -533,7 +537,9 @@ header{
     z-index: 3;
 }
 
-
+.popular_card_2{
+    display: none;
+}
 
 .motor_adapt{
     max-height: 110px;
@@ -941,9 +947,20 @@ display: none;
         width: calc(90%/3 );
     }
 
+    .good_category, p:hover {
+        color: var(--accent);
+
+    }
+
     .popular_body{
         display: flex;
         flex-direction: row;
         gap: 30px;
+    }
+
+    .popular_card_2{
+        display: block;
+        border: 2px solid var(--light_grey_text);
+        border-radius: 5px;
     }
 }
