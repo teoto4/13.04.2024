@@ -584,6 +584,13 @@ display: none;
     display: none;
 }
 
+.descktop_staf{
+    display: none;
+}
+
+.footer{
+    display: none;
+}
 
 @media (min-width:720px) and (max-width:1000px) {
 
@@ -918,10 +925,16 @@ display: none;
         justify-content: space-between;
     }
     .promotion_box_desk{
+        display: flex;
+        flex-direction: column;
         border: 1px solid var(--light_grey_text);
         margin-left: 36px;
         width: 265px;
         height: 397px;
+    }
+
+    .promotion_box_desk img{
+        align-self: center;
     }
 
     .promotion_box_desk p{
@@ -1131,6 +1144,96 @@ display: none;
     }
 
     .footer_body{
+        width: 80%;
+        display: flex;
+    }
 
+    .speakers{
+        display: flex;
+    }
+
+    .subscribe{
+        width: 222px;
+        font-size: 14px;
+        font-weight: 700;
+        margin-top: 42px;
+        margin-bottom: 34px;
+    }
+
+    .speaks_footer{
+        margin-top: 42px;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .speaks_footer li{
+        margin-bottom: 5px;
+    }
+
+    .speaks_footer li:last-child{
+        margin-top: 46px;
+        font-size: 10px;
+    }
+
+    .speaks_footer li:first-child{
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    .email_send{
+        position: relative;
+    }
+
+    .email_send input{
+        padding: 8px 12px;
+        background-color: #ffff;
+        font-size: 16px;
+        border: solid #FFFFFF 1px;
+        border-radius: 5px;
+    }
+
+    .email_send input:active{
+        border: solid #FFFFFF 1px;
+        border-radius: 5px;
+    }
+
+    .buton_form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        background-color: var(--accent);
+        width: 109px;
+        height: 33px;
+        left: 185px;
+        bottom: 89px;
+    }
+    .buton_form a{
+        text-decoration: none;
+        line-height: 13.13px;
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--white_color);
+    }
+
+    .speaks_footer{
+        margin-left: 100px;
+    }
+    .speaks_footer:first-child{
+        margin-left: 232px;
+    }
+
+    .icon_box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 100px;
+    }
+    .icon_box img{
+       margin-left: 30px;
+    }
+
+    .icon_box img:first-child{
+        margin-left: 0px;
     }
 }
